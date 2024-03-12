@@ -9,11 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #131313; 
+  background-color: #131313; /* Dark gray background */
 }
 
 .points {
-  color: #ffffff; 
+  color: #ffffff; /* White text color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ body {
 }
 
 .score {
-  color: #f0f0f0; 
+  color: #f0f0f0; /* Light gray text color */
   position: absolute;
   font-size: 6vmin;
   right: 88vmin;
@@ -33,11 +33,11 @@ body {
 }
 
 .end-screen {
-  color: #f0f0f0; 
+  color: #f0f0f0; /* Light gray text color */
 }
 
 .start-screen {
-  color: #f0f0f0; 
+  color: #f0f0f0; /* Light gray text color */
   position: absolute;
   display: flex;
   justify-content: center;
