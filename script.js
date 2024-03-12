@@ -1,12 +1,10 @@
 import { updateGround, setupGround } from "./ground.js"
 import { updateDino, setupDino, getDinoRect, setDinoLose } from "./dino.js"
 import { updateCactus, setupCactus, getCactusRects } from "./cactus.js"
-//here we are actually importing stuff from the folder of updateCustomProperty where the required functions are already declared, followed throughout the document.
 
 const WORLD_WIDTH = 100
 const WORLD_HEIGHT = 30
 const SPEED_SCALE_INCREASE = 0.00001
-//speed of land increases as per time passes
 
 const worldElem = document.querySelector("[data-world]")
 const scoreElem = document.querySelector("[data-score]")
@@ -15,7 +13,6 @@ const startScreenElem = document.querySelector("[data-start-screen]")
 setPixelToWorldScale()
 window.addEventListener("resize", setPixelToWorldScale)
 document.addEventListener("keydown", handleStart, { once: true })
-//only once one can press any key to start
 
 let lastTime
 let speedScale
@@ -51,7 +48,6 @@ function isCollision(rect1, rect2) {
     rect1.right > rect2.left &&
     rect1.bottom > rect2.top
   )
-  //conditions to lose the game
 }
 
 function updateSpeedScale(delta) {
